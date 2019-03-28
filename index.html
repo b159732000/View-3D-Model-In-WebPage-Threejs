@@ -80,12 +80,12 @@
         var mtlLoader = new THREE.MTLLoader();
         mtlLoader.setPath('./lib/assets/models/');
         //加载mtl文件
-        mtlLoader.load('./man.MTL', function (material) {
+        mtlLoader.load('./man.mtl', function (material) {
             var objLoader = new THREE.OBJLoader();
             //设置当前加载的纹理
             objLoader.setMaterials(material);
             objLoader.setPath('./lib/assets/models/');
-            objLoader.load('./man.OBJ', function (object) {
+            objLoader.load('./man.obj', function (object) {
 
                 // //获取两个翅膀的位置
                 // var wing2 = object.children[5];
